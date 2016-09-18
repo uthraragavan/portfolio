@@ -1,0 +1,103 @@
+/*
+        Portfolio Project
+        Author: Uthra Vijayaragavan
+        Date: 09/16/2016
+        File Type: CSS
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+/* Using the border add the horizontal line beneath the header */
+.header-row {
+    border-bottom: solid 2px #7d97ad;
+}
+
+/* Right align the name and role in header */
+.header-heading-name,.header-heading-role {
+    text-align: right;
+    color: #2d3c49;
+}
+
+/* Center align the caption beneath each individual work */
+.work-heading,.work-link-heading {
+    text-align: center;
+    color: #2d3c49;
+}
+
+.work-heading,.header-heading-role {
+    font-weight: bold;
+}
+
+.work-row-heading {
+    color: #7d97ad;
+}
+
+.portfolio-image-row,.work-row {
+    padding: 20px 0px 20px 0px;
+}
+
+/* Set the max-width of outer container to occupy 80% of
+screen and leaving margins on either side to align it to center */
+.outer {
+    max-width:80%;
+    margin: 0 auto;
+}
+
+/* To be responsive, set the max-width of all img classes to 100% */
+.img-logo,.img-work,.img-portfolio {
+    max-width: 100%;
+}
+
+.img-work,.img-portfolio {
+    margin: 0 auto;
+    display: block;
+}
+
+.img-work {
+    width: 185px;
+    height: 135px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 380px) {
+    .header-heading-name {
+        font-size: 150%;
+    }
+    .header-heading-role,.work-heading {
+        font-size: 100%;
+    }
+    .work-row-heading {
+        font-size:150%;
+    }
+    .img-work {
+        width: 50%;
+        height: 50%;
+    }
+    .img-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 381px) {
+    .header-heading-name {
+        font-size: 180%;
+    }
+    .header-heading-role,.work-heading {
+        font-size: 130%;
+    }
+    .work-row-heading {
+        font-size:180%;
+    }
+    .img-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
