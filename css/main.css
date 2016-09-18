@@ -12,6 +12,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    margin:20px;
 }
 
 /*********** Images related CSS rules ************/
@@ -95,7 +96,7 @@ body {
 
 @media screen and (max-width: 1000px) and (min-width: 766px) {
      .work-link-heading {
-        font-size:75%
+        font-size:65%
 
 }
 
